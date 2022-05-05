@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản P1</title>
+    <style>
+        h2{
+            font-size: 50px;
+            font-family: Century;
+            color: violet;
+            text-align: center;
+        }
+        #head{
+            background: red;
+            font-size: 25px;
+            height: 40px;
+        }
+        #name, #mail{
+            font-family:Cambria ;
+            color: blue;
+            font-size: 16px;
+        }
+        .like{
+            color: lightcoral;
+        }
+        #st{
+            font-family:Cambria ;
+            color: blue;
+            font-size: 16px;
+        }
+        table{
+            padding: 5px;
+            border: 5px solid aqua;
+
+        }
+    </style>
+</head>
+<body>
+<form action=" http://demo.codegym.vn/6/registration_form/register.php" method="get">
+   <h2>Tạo form đơn giản P1</h2>
+    <table>
+        <tr id="head">
+            <th colspan="5">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr id="name">
+            <td>Họ và tên</td>
+            <td colspan="3"><input type="textbox" name="tx" placeholder="Họ và tên" size="40px"></td>
+        </tr>
+        <tr id="mail">
+            <td>Email</td>
+            <td colspan="2"><input type="email" id="email" ame="mail"></td>
+
+        </tr>
+        <tr class="like">
+            <td id="st">Sở thích </td>
+            <td><input type="checkbox"  id="like1" name="like" value="Thể thao"><label for="like1">Thể thao</label></td>
+            <td><input type="checkbox"  id="like2" name="like" value="Âm nhạc"><label for="like2">Âm nhạc</label></td>
+            <td><input type="checkbox"  id="like3" name="like" value="Đọc sách"><label for="like3">Đọc sách</label></td>
+        </tr>
+        <tr class="like">
+            <td></td>
+            <td><input type="checkbox"  id="like4" name="like" value="Lướt web"><label for="like4">Lướt web</label></td>
+            <td><input type="checkbox"  id="lik5" name="like" value="Chơi game"><label for="like5">Chơi game</label></td>
+            <td><input type="checkbox"  id="like6" name="like" value="Điện ảnh"><label for="like6">Điện ảnh</label></td>
+        </tr>
+        <tr class="like">
+            <td></td>
+            <td><input type="checkbox"  id="lik7" name="like" value="Du lịch"><label for="like7">Du lịch</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="sm" value="Gửi thông tin"></td>
+            <td><input type="reset" name="sm" value="Nhập lại"></td>
+
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
