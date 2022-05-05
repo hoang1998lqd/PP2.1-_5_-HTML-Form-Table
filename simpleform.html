@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        h2{
+        font-family: Tahoma;
+            font-size: 45px;
+            color: violet;
+        }
+        p{
+            font-family: Tahoma;
+            font-size: 25px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form action="simpleform.html" method="get">
+    <h2>Order Form</h2>
+    <p>
+        what would you like to buy
+    </p>
+    <select>
+        <option value="A">A</option>
+        <option value="B">B+0.5$</option>
+        <option value="C">C+1$</option>
+    </select>
+    <p>
+        How many would you like to order?
+    </p>
+    <input type="radio" name="money"> 1- $10 <br>
+    <input type="radio" name="money"> 2- $20 <br>
+    <input type="radio" name="money"> 3- $30 <br>
+    <p>Name <br>
+        <input type="text" name="name" placeholder="Firstname">
+        <input type="text" name="name" placeholder="Lastname">
+    </p>
+    <p>Email <br>
+        <input type="text" name="name" size="35">
+
+    </p>
+    <p>Phone Number <br>
+        <input type="text" name="phone" size="5"> -
+        <input type="text" name="phone" size="5"> -
+        <input type="text" name="phone" size="5">
+
+
+    </p>
+    <p><input type="button" name="submit" value="Submit"></p>
+
+
+</form>
+</body>
+</html>
