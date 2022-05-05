@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <style>
+        table{
+            background: violet;
+            text-align: left;
+            /*border-collapse: collapse;*/
+            font-family: Cambria;
+            /*padding: 5px;*/
+        }
+        th{
+            font-size: 25px;
+            border-collapse: collapse;
+                    color: mediumblue;
+        background: yellow;
+            padding: 2px;
+            height: 30px;
+            border: solid 3px violet
+        };
+        /*td{*/
+        /*    border-collapse: collapse;*/
+        /*    padding: 20px red ;*/
+        /*}*/
+
+
+    </style>
+</head>
+<body>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="get" >
+    <table>
+        <tr>
+            <th colspan="5" >ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+           <td colspan="2" > <input type="text" name="name" size="30" ></td>
+        </tr>
+        <tr>
+        <td>Ngày sinh</td>
+        <td colspan="2" > <input type="date" name="birthday" size="15" ></td>
+         </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td> <input type="radio" id="gen1" name="gender" value="Nam"> <label for="gen1">Nam</label>
+                <input type="radio" id="gen2" name="gender" value="Nữ"> <label for="gen2">Nữ</label></td>
+<!--            <td> <input type="radio" id="gen2" name="gender" value="Nữ"> <label for="gen2">Nữ</label> </td>-->
+        </tr>
+        <tr>
+            <td> Địa chỉ</td>
+            <td colspan="2" ><input type="text " size="30"></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td colspan="2">
+                <select name="class" id="class">
+                    <option value="Chọn lớp">--Chọn lớp--</option>
+                    <option value="Chọn lớp">Lớp học HTML & CSS</option>
+                    <option value="Chọn lớp">Lớp học JAVA</option>
+                    <option value="Chọn lớp">Lớp học C & C++</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="2"><input type="mail" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td colspan="2"><input type="text" id="phone" name="phone"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit"name="sm"value="Đăng ký">
+                <input type="reset"name="rs"value="Nhập lại">
+            </td>
+<!--            <td><input type="reset"name="rs"value="Nhập lại"></td>-->
+
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
